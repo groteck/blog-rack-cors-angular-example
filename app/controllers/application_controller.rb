@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  before_filter :cors_preflight_check
   after_filter :cors_set_access_control_headers
 
   # For all responses in this controller, return the CORS access control headers.
