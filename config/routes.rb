@@ -1,6 +1,7 @@
 BlogTest::Application.routes.draw do
   resources :posts
   root to: "posts#index"
+  match 'api/posts' => 'posts#index', via: :options, format: :json
 
 
   # The priority is based upon order of creation:
