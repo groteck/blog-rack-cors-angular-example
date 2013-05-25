@@ -24,7 +24,6 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-gem 'rack-cors', :require => 'rack/cors'
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
